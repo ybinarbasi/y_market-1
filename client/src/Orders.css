@@ -1,0 +1,46 @@
+ul {
+    list-style: none;
+    margin    : 0;
+    padding   : 0;
+}
+
+li {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+li>div:first-child {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 0.5rem;
+}
+
+li>div:first-child>div:first-child {
+    margin-right: 0.5rem;
+}
+
+li>div:first-child>div:nth-child(2) {
+    margin-right: 0.5rem;
+}
+
+li>div:first-child>span {
+    font-weight: bold;
+    font-size  : 1rem;
+}
+
+li>ul {
+    display: flex;
+    margin : 0;
+    padding: 0;
+}
+
+li>ul>li {
+    margin-right: 0.5rem;
+}
+
+li>div:first-child>div:first-child+div:not(:last-child) {
+    flex-grow       : 1;
+    height          : 1px;
+    background-color: #000;
+}

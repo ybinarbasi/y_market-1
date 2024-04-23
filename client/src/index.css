@@ -1,0 +1,109 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    @apply font-urbanist;
+  }
+
+  li {
+    @apply px-2 py-1.5 text-lg;
+  }
+
+ 
+
+  
+  h1 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+  h3 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+  h4 {
+    @apply text-lg md:text-xl font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 border bg-gradient-to-r from-primary-200 to-primary-100 text-white rounded-md;
+  }
+
+  .btn--form {
+    @apply p-2 border bg-gradient-to-r from-primary-200 to-primary-100 text-white rounded-md;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-6xl mx-auto px-4;
+  }
+} */
+
+
+
+ul {
+  list-style: none;
+  margin    : 0;
+  padding   : 0;
+}
+
+li {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+li>div:first-child {
+  display      : flex;
+  align-items  : center;
+  margin-bottom: 0.5rem;
+}
+
+li>div:first-child>div:first-child {
+  margin-right: 0.5rem;
+}
+
+li>div:first-child>div:nth-child(2) {
+  margin-right: 0.5rem;
+}
+
+li>div:first-child>span {
+  font-weight: bold;
+  font-size  : 1rem;
+}
+
+li>ul {
+  display: flex;
+  margin : 0;
+  padding: 0;
+}
+
+li>ul>li {
+  margin-right: 0.5rem;
+}
+
+li>div:first-child>div:first-child+div:not(:last-child) {
+  flex-grow       : 1;
+  height          : 1px;
+  background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+.map-container {
+  height: 400px;
+  }
