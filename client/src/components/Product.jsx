@@ -85,7 +85,7 @@ const Product = ({ useProducts }) => {
                     <div className="flex flex-row w-full  justify-center items-center absolute bottom-8 transition duration-500 ease-in-out opacity-0 group-hover:opacity-100">
                    
                         <button
-                            className=" bg-slate-700 px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out text-white "
+                            className=" bg-sky-700 px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out text-white "
                             onClick={() => handleAddToCart(product)}
                         >
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@ const Product = ({ useProducts }) => {
 
 
                         <Link
-                            className="p-1 bg-slate-700 px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out text-white "
+                            className="p-1 bg-sky-700 px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out text-white "
                             to={`/products/${useProducts._id}`}
                         >
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +106,7 @@ const Product = ({ useProducts }) => {
 
 
                         <button
-                            className={`${isLiked ? 'text-sky-500 p-1  px-3 py-3 transition duration-300 hover:bg-white ease-in-out bg-slate-700  ' : 'text-white p-1 hover:bg-red-500 px-3 py-3 transition duration-300 ease-in-out bg-slate-700'} `}
+                            className={`${isLiked ? 'text-sky-500 p-1  px-3 py-3 transition duration-300 hover:bg-white ease-in-out bg-sky-700  ' : 'text-white p-1 hover:bg-sky-500 px-3 py-3 transition duration-300 ease-in-out bg-sky-700'} `}
                             onClick={likeHandler} >
                             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 21C11.8684 21.0008 11.7379 20.9755 11.6161 20.9258C11.4943 20.876 11.3834 20.8027 11.29 20.71L3.51999 12.93C2.54536 11.9452 1.99866 10.6156 1.99866 9.23C1.99866 7.84443 2.54536 6.51482 3.51999 5.53C4.50226 4.55051 5.83283 4.00047 7.21999 4.00047C8.60716 4.00047 9.93773 4.55051 10.92 5.53L12 6.61L13.08 5.53C14.0623 4.55051 15.3928 4.00047 16.78 4.00047C18.1672 4.00047 19.4977 4.55051 20.48 5.53C21.4546 6.51482 22.0013 7.84443 22.0013 9.23C22.0013 10.6156 21.4546 11.9452 20.48 12.93L12.71 20.71C12.6166 20.8027 12.5057 20.876 12.3839 20.9258C12.2621 20.9755 12.1316 21.0008 12 21Z" fill="currentColor" />
@@ -116,11 +116,11 @@ const Product = ({ useProducts }) => {
                             <>
                                 <button
 
-                                    className="p-1 bg-slate-700 px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out text-white " onClick={deleteProduct}>
+                                    className="p-1 bg-sky-700 px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out text-white " onClick={deleteProduct}>
                                     <DeleteOutlineIcon fontSize="large" />
                                 </button>
                                 <button
-                                    className="p-1 bg-slate-700 px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out text-white "
+                                    className="p-1 bg-sky-700 px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out text-white "
                                     onClick={() => setOnClose(true)} >
                                     <ModeEditIcon fontSize="large" />
                                 </button>
@@ -141,26 +141,26 @@ const Product = ({ useProducts }) => {
                                 <img className="w-full transition duration-700 ease-in-out group-hover:opacity-60"src={useProducts.image} alt="image" />
                                 <div className="flex justify-center">
                                     <div className="absolute bottom-4 transition duration-500 ease-in-out opacity-0 group-hover:opacity-100">
-                                        <a href="#" className="bg-white px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out">
+                                        <a href="#" className="bg-white px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out">
                                             GGGG
                                         </a>
-                                        <a href="#" className="bg-white px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out">
+                                        <a href="#" className="bg-white px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out">
                                             DDDD
                                         </a>
-                                        <a href="#" className="bg-white px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out">
+                                        <a href="#" className="bg-white px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out">
                                          FFFF
                                         </a>
-                                        <a href="#" className="bg-white px-3 py-3 hover:bg-red-500 transition duration-300 ease-in-out">
+                                        <a href="#" className="bg-white px-3 py-3 hover:bg-sky-500 transition duration-300 ease-in-out">
                                          JJJJ
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div className="px-4 py-3 bg-white">
-                                <a href="#" className=""><h1 className="text-gray-800 font-semibold text-lg hover:text-red-500 transition duration-300 ease-in-out">White Line Dress</h1></a>
+                                <a href="#" className=""><h1 className="text-gray-800 font-semibold text-lg hover:text-sky-500 transition duration-300 ease-in-out">White Line Dress</h1></a>
                                 <div className="flex py-2">
                                     <p className="mr-2 text-xs text-gray-600">$45.00</p>
-                                    <p className="mr-2 text-xs text-red-600 line-through">$15.00</p>
+                                    <p className="mr-2 text-xs text-sky-600 line-through">$15.00</p>
                                 </div>
                                 <div className="flex">
                                     <div className="">

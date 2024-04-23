@@ -38,7 +38,7 @@ function AboutCard() {
             < div class="h-fit w-full py-14 shadow-lg   " >
                 <div class="flex flex-wrap items-center">
                     <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-500">
+                        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-sky-500">
                             <img alt="..." src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?cs=srgb&dl=pexels-rafael-cosquiere-2041540.jpg&fm=jpghttps://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full align-middle rounded-t-lg" />
                             <blockquote class="relative  p-8 mb-4">
                                 
