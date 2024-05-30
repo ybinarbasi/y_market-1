@@ -13,7 +13,7 @@ const AdminOrderDetail = ({ isOpen, setIsOpen }) => {
 
     const userId = useSelector((store) => store.auth.currentUser._id);
     const { isLoading, error, data } = useQuery(['order', id], async () => {
-        const response = await axios.get(`http://localhost:5000/api/orders/${id}`, {
+        const response = await axios.get(`http://localhost:5001/api/orders/${id}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
                 id: userId,
@@ -28,7 +28,7 @@ const AdminOrderDetail = ({ isOpen, setIsOpen }) => {
     });
     const updateStatus = async (formData) => {
         try {
-            const response = await axios.patch(`http://localhost:5000/api/orders/${id}`, formData, {
+            const response = await axios.patch(`http://localhost:5001/api/orders/${id}`, formData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
 
@@ -121,7 +121,7 @@ return (
 
                                                         </div>
                                                         <div className="flex flex-col sm:flex-row gap-1">
-                                                            <a href={`http://localhost:5000/public/${product.pdf}`}
+                                                            <a href={`http://localhost:5001/public/${product.pdf}`}
 
                                                                 className=" flex cursor-pointer items-center justify-center rounded-md bg-emerald-400 py-2 px-4 text-center text-white transition duration-150 ease-in-out hover:translate-y-1 hover:bg-emerald-500">
 
@@ -213,7 +213,7 @@ export default AdminOrderDetail
 const { token } = useSelector((state) => state.auth);
 const userId = useSelector((store) => store.auth.currentUser._id);
 const { isLoading, error, data } = useQuery(['order'], () => {
-    return axios.get(`http://localhost:5000/api/orders/${id}`, {
+    return axios.get(`http://localhost:5001/api/orders/${id}`, {
         headers: {
             Authorization: `Bearer ${token}`,
             id: userId,

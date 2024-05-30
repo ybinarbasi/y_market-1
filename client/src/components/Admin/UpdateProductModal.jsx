@@ -16,7 +16,7 @@ function UpdateProductModal({ setOnClose, onClose, product, productId }) {
 
     const updateUser = async (userData) => {
         console.log(userData, 'userdataa');
-        const response = await axios.put(`http://localhost:5000/api/products/${productId}`
+        const response = await axios.put(`http://localhost:5001/api/products/${productId}`
             , userData, {
             headers: {
                 Authorization: `Bearer ${token}`,

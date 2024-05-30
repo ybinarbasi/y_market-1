@@ -20,7 +20,7 @@ function UserOrders() {
         error,
     } = useQuery({
         queryKey: ["orders"],
-        queryFn: () => axios.get(`http://localhost:5000/api/orders`, {
+        queryFn: () => axios.get(`http://localhost:5001/api/orders`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },

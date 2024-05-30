@@ -7,7 +7,7 @@ function Pdfviewer({ product, isvisible, onClose }) {
 
 
   const docs = [
-    { uri: `http://localhost:5000/public/${product.pdf}` }, // Remote file
+    { uri: `http://localhost:5001/public/${product.pdf}` }, // Remote file
     // Local File 1672412280688_insan-neyle-yasar.pdf
   ];
 

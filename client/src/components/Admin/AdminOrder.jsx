@@ -20,7 +20,7 @@ function AdminOrder({ setIsOpen }) {
     error,
   } = useQuery({
     queryKey: ["orders",providerId],
-    queryFn: () => axios.get(`http://localhost:5000/api/orders/provider/${providerId}`, {
+    queryFn: () => axios.get(`http://localhost:5001/api/orders/provider/${providerId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -55,7 +55,7 @@ function AdminOrder({ setIsOpen }) {
     console.log(orderId);
     console.log(formData);
     try {
-      const response = await axios.patch(`http://localhost:5000/api/orders/${orderId}`, formData, {
+      const response = await axios.patch(`http://localhost:5001/api/orders/${orderId}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

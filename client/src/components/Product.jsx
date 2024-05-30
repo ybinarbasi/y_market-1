@@ -25,7 +25,7 @@ const Product = ({ useProducts }) => {
 
     const likeHandler = () => {
         try {
-            axios.put("http://localhost:5000/api/products/" + useProducts._id + "/like", { userId: userId })
+            axios.put("http://localhost:5001/api/products/" + useProducts._id + "/like", { userId: userId })
 
             setLike(isLiked ? like - 1 : like + 1);
             setIsLiked(!isLiked);
@@ -41,7 +41,7 @@ const Product = ({ useProducts }) => {
     const deleteProduct = async () => {
         try {
             await axios.delete(
-                `http://localhost:5000/api/products/${useProducts._id}`,
+                `http://localhost:5001/api/products/${useProducts._id}`,
                 {
                     headers: {
                         Authorization: `Barear ${token}`,

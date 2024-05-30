@@ -52,7 +52,7 @@ const ShoppingCart = () => {
   const createOrder = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/orders`,
+        `http://localhost:5001/api/orders`,
         formState,
         {
           headers: {
@@ -85,7 +85,7 @@ const ShoppingCart = () => {
   };
 
   const { data: users, isLoading } = useQuery(['users'], async () => {
-    const response = await axios.get('http://localhost:5000/api/users', {
+    const response = await axios.get('http://localhost:5001/api/users', {
       headers: {
         Authorization: `Bearer ${token}`,
 

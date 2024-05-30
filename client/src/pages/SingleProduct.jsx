@@ -14,7 +14,7 @@ import Newsletter from '../components/Newsletter';
 import Pdfviewer from '../components/Pdfviewer';
 import axios from 'axios';
 const fetchProducts = async (id) => {
-  const response = await axios.get(`http://localhost:5000/api/products/${id}`);
+  const response = await axios.get(`http://localhost:5001/api/products/${id}`);
   return response.data;
 };
 

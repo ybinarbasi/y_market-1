@@ -16,7 +16,7 @@ function UpdateUserModal({ setOnClose, onClose, user }) {
 
     const updateUser = async (userData) => {
         console.log(userData, 'userdataa');
-        const response = await axios.put(`http://localhost:5000/api/users/${user._id}`
+        const response = await axios.put(`http://localhost:5001/api/users/${user._id}`
             , userData, {
             headers: {
                 Authorization: `Bearer ${token}`,

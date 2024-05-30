@@ -7,7 +7,7 @@ const SearchDropdown = ({ searchQuery }) => {
         ['search', searchQuery],
         () =>
             axios
-                .get(`http://localhost:5000/api/products?title=${searchQuery}`)
+                .get(`http://localhost:5001/api/products?title=${searchQuery}`)
                 .then((res) => res.data),
         {
             enabled: searchQuery.length > 0,

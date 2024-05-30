@@ -6,7 +6,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import UpdateProductModal from './UpdateProductModal';
 
 const fetchUserProducts = async (userId) => {
-  const response = await axios.get(`http://localhost:5000/api/products?userID=${userId}`);
+  const response = await axios.get(`http://localhost:5001/api/products?userID=${userId}`);
   return response.data;
 };
 
@@ -55,7 +55,7 @@ function AdminProducts() {
   const deleteProduct = async (productId) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/products/${productId}`,
+        `http://localhost:5001/api/products/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

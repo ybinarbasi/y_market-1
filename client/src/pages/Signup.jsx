@@ -13,7 +13,7 @@ const Signup = () => {
   
   const [locationError, setLocationError] = useState(false);
   const mutation = useMutation(
-    (userData) => axios.post("http://localhost:5000/api/auth/register", userData),
+    (userData) => axios.post("http://localhost:5001/api/auth/register", userData),
     {
       onSuccess: () => {
         toast.success("Hesap başarıyla oluşturuldu!");

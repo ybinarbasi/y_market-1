@@ -4,7 +4,7 @@ import axios from 'axios';
 import Product from './Product';
 
 const fetchUserProducts = async (userId) => {
-  const response = await axios.get(`http://localhost:5000/api/products?userID=${userId}`);
+  const response = await axios.get(`http://localhost:5001/api/products?userID=${userId}`);
   return response.data;
 };
 
