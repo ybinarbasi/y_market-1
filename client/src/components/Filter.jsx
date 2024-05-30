@@ -14,7 +14,7 @@ const Filter = ({ setTitle }) => {
         Filtreler
         </p>
 
-        <button className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md">
+        <button onClick={()=> setCategory("")} className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md">
           Filtre sıfırla
         </button>
       </div>

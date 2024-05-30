@@ -33,12 +33,6 @@ const ShoppingCart = () => {
   /*  const productIds = cart?.cartItems?.map((item) => ({ product: item._id, cartQuantity: item.cartQuantity })); */
 
   const [onClose, setOnClose] = useState(false);
-
-
-
-
-
-
   const [formState, setFormState] = useState({
     userId: userId,
     products: cart?.cartItems,
@@ -108,8 +102,6 @@ const ShoppingCart = () => {
     return <div>Loading...</div>;
   }
 
- 
-
 
   return (
     <>
@@ -148,10 +140,10 @@ const ShoppingCart = () => {
               onChange={(e) => setFormState({ ...formState, provider: e.target.value })}
               className="block appearance-none w-full bg-white border-2  hover:border-gray-500 px-4 py-4 pr-8 rounded-lg shadow leading-tight focus:outline-none focus:shadow-outline"
             >
+              <option  value={""}>Sağlayıcı Seç</option>
               {
                 adminUsers?.map((admin, key) => (
-
-                  <option key={key} value={admin._id}>{admin.username}</option>
+                <option key={key} value={admin._id}>{admin.username}</option>
                 ))
               }
 

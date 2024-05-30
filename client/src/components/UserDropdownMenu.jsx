@@ -21,7 +21,7 @@ function UserDropdownMenu({ currentUser, totalQantity }) {
 
     useEffect(() => {
         dispatch(getTotals())
-      }, [cart])
+    }, [cart])
     return (
         <div className="relative ">
             <button
@@ -33,27 +33,10 @@ function UserDropdownMenu({ currentUser, totalQantity }) {
                 {
                     currentUser ? (
                         <>
-                            <div>
-                                <Link
-                                    onClick={logoutHandler}
-                                    className="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-sky-500"
-                                    to='/'>
-
-                                    <Badge
-                                        color='primary'
-                                        className='cursor-pointer  hover:text-sky-600 mx-5'
-                                    >
-
-                                        <LogoutIcon/>
-
-                                    </Badge>
-                                    Logout
-                                </Link>
-                            </div>
-                            {/*<Badge
+                            <Badge
                                 badgeContent={`${totalQantity}`}
-                                color='info'
-                                className='cursor-pointer hover:text-sky-600 mx-5'
+                                color='error'
+                                className='cursor-pointer hover:text-rose-600 mx-5'
                             >
 
                                 <img
@@ -63,7 +46,7 @@ function UserDropdownMenu({ currentUser, totalQantity }) {
                                 />
 
                             </Badge>
-                            <span className="hidden sm:inline">{currentUser?.username}</span>*/}
+                            <span className="hidden sm:inline">{currentUser?.username}</span>
                         </>
                     ) : (
 
@@ -84,36 +67,36 @@ function UserDropdownMenu({ currentUser, totalQantity }) {
                 <div className="absolute z-50   py-2  bg-white rounded-md shadow-lg">
 
 
-                    {/*{
-                  currentUser &&
-                  <Link
-                        className="block px-4 py-2 text-center text-sm  text-gray-700 hover:bg-gray-100 hover:text-sky-500"
-                        to='/cart'>
-                        <Badge
-                            badgeContent={`${totalQantity}`}
-                            color='info'
-                            className='cursor-pointer   hover:text-sky-600 mx-5'
-                        >
-                            <ShoppingCart />
-                        </Badge>
-                        sepet
-                    </Link>}
+                    {
+                        currentUser &&
+                        <Link
+                            className="block px-4 py-2 text-center text-sm  text-gray-700 hover:bg-gray-100 hover:text-rose-500"
+                            to='/cart'>
+                            <Badge
+                                badgeContent={`${totalQantity}`}
+                                color='error'
+                                className='cursor-pointer   hover:text-rose-600 mx-5'
+                            >
+                                <ShoppingCart/>
+                            </Badge>
+                            sepet
+                        </Link>}
 
 
                     {
                         currentUser && <div>
                             <Link
-                                className="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-sky-500"
+                                className="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-rose-500"
                                 to='/profile'>
                                 <Badge
                                     color='primary'
-                                    className='cursor-pointer mx-5 hover:text-sky-600'
+                                    className='cursor-pointer mx-5 hover:text-rose-600'
                                 >
-                                    <Person2 />
+                                    <Person2/>
                                 </Badge>
                                 Profile
                             </Link>
-                             <Link onClick={logoutHandler} to='/' className='mx-5'><Logout /></Link>
+                            {/* <Link onClick={logoutHandler} to='/' className='mx-5'><Logout /></Link> */}
                         </div>
 
                     }
@@ -121,36 +104,36 @@ function UserDropdownMenu({ currentUser, totalQantity }) {
                         currentUser?.isAdmin &&
                         <div>
 
-                            <Link 
-                                className="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-sky-500"
+                            <Link
+                                className="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-rose-500"
                                 to='/admin'>
 
                                 <Badge
                                     color='primary'
-                                    className='cursor-pointer  hover:text-sky-600 mx-5'
+                                    className='cursor-pointer  hover:text-rose-600 mx-5'
                                 >
 
-                                    <AdminPanelSettingsIcon />
+                                    <AdminPanelSettingsIcon/>
 
                                 </Badge>
                                 Admin
                             </Link>
                         </div>
-                    }*/}
+                    }
                     {
                         currentUser &&
                         <div>
                             <Link
                                 onClick={logoutHandler}
-                                className="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-sky-500"
+                                className="block text-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-rose-500"
                                 to='/'>
 
                                 <Badge
                                     color='primary'
-                                    className='cursor-pointer  hover:text-sky-600 mx-5'
+                                    className='cursor-pointer  hover:text-rose-600 mx-5'
                                 >
 
-                                    <LogoutIcon />
+                                    <LogoutIcon/>
 
                                 </Badge>
                                 Logout

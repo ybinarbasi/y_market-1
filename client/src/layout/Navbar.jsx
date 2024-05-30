@@ -88,7 +88,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
 
-                {/*<li className="inline-flex flex-col items-center justify-center p-3 hover:bg-gray-50 group  rounded-lg  ">
+                <li className="inline-flex flex-col items-center justify-center p-3 hover:bg-gray-50 group  rounded-lg  ">
                   <NavLink
                     to="/categories/allproduct"
                     className={({ isActive, isPending }) =>
@@ -109,7 +109,7 @@ const Navbar = () => {
                         }  `}
                     />
                   </NavLink>
-                </li>*/}
+                </li>
                 <li className="inline-flex  items-center justify-center p-3 hover:bg-gray-50 group  rounded-lg ">
                   <NavLink
                     to="/about"
